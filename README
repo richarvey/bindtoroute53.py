@@ -1,0 +1,12 @@
+Installation:
+~~~~~~~~~~~~~
+
+sudo apt-get install python-dnspython
+
+Running:
+~~~~~~~~
+
+./bindtoroute53.py -z example.com > myrequest.xml
+
+This will produce a file you can now use with the route53 API which will create new records for you.
+Note: It doesn’t connect to amazon for you, you need to do that yourself following the guides on aws.amazon.com.
